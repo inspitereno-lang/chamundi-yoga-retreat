@@ -1,4 +1,4 @@
-.services-header {
+.page-header.services-header {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/optimized/046.webp');
     background-size: cover;
     background-position: center;

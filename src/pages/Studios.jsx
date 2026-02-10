@@ -36,7 +36,7 @@ const Studios = () => {
 
     return (
         <div id="studios" className="studios-page">
-            <header className="page-header">
+            <header className="page-header studios-header">
                 <div className="container">
                     <h1>Explore Our Yoga Spaces</h1>
                     <p>Find the perfect environment for your practice or teaching.</p>
