@@ -1,0 +1,186 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    z-index: 1000;
+    transition: var(--transition-smooth);
+}
+
+.header.scrolled {
+    padding: 0.7rem 0;
+    background-color: #ffffff !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 44px;
+    width: 44px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-main {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #1b3317;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+}
+
+.logo-sub {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #1b3317;
+    opacity: 0.9;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+/* White text for non-home pages - nav only, not logo (when NOT scrolled) */
+.header.white-nav:not(.scrolled) .nav-link,
+.header.white-nav:not(.scrolled) .nav-link-btn {
+    color: #1b3317;
+}
+
+.header.white-nav:not(.scrolled) .mobile-menu-btn {
+    color: #1b3317;
+}
+
+/* Dark text when scrolled (white background) */
+.header.scrolled .nav-link,
+.header.scrolled .nav-link-btn {
+    color: #1b3317 !important;
+}
+
+.header.scrolled .mobile-menu-btn {
+    color: #1b3317 !important;
+}
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-family: inherit;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    transition: var(--transition-smooth);
+}
+
+.nav-link-btn:hover {
+    color: var(--primary-color);
+}
+
+.nav-link-btn.active {
+    font-weight: 600;
+}
+
+.nav-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.header.white-nav:not(.scrolled) .nav-underline {
+    background-color: #1b3317;
+}
+
+.nav-cta {
+    margin-left: 1rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* White navbar for non-home pages */
+.header.white-nav .logo-text,
+.header.white-nav .nav-link {
+    color: #1b3317;
+}
+
+.header.white-nav .mobile-menu-btn {
+    color: #1b3317;
+}
+
+.header.white-nav .nav-link::after {
+    background-color: #1b3317;
+}
+
+.mobile-menu-btn {
+    display: none;
+    color: var(--primary-color);
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: var(--white);
+        padding: 6rem 2rem;
+        gap: 2rem;
+        transition: 0.4s ease;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-nav.open {
+        right: 0;
+    }
+
+    .mobile-link {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}
