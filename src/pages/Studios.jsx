@@ -1,9 +1,23 @@
 import { ArrowRight, Wind, Shield, Users, Music, Coffee, Wifi, Car, Waves, Leaf, Home, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './Studios.css';
 
 const Studios = () => {
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const handleBookClick = () => {
+        if (location.pathname !== '/') {
+            navigate('/#booking');
+        } else {
+            const bookingSection = document.getElementById('booking');
+            if (bookingSection) {
+                bookingSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    };
+
     const studios = [
         {
             id: 1,
@@ -64,7 +78,11 @@ const Studios = () => {
                                         <li key={i}>{f}</li>
                                     ))}
                                 </ul>
-                                {studio.id !== 2 && <Link to="/#booking" className="btn btn-primary">Book This Space</Link>}
+                                {studio.id !== 2 && (
+                                    <button onClick={handleBookClick} className="btn btn-primary">
+                                        Book This Space
+                                    </button>
+                                )}
                             </div>
                         </motion.div>
                     ))}
@@ -106,9 +124,9 @@ const Studios = () => {
                                 <div className="best-for-pro">
                                     <strong>Perfect for:</strong> {allInclusivePackage.bestFor}
                                 </div>
-                                <Link to="/#booking" className="btn btn-primary package-book-btn">
+                                <button onClick={handleBookClick} className="btn btn-primary package-book-btn">
                                     Inquire for Group Rates <ArrowRight size={18} />
-                                </Link>
+                                </button>
                             </div>
                         </motion.div>
                     </div>
