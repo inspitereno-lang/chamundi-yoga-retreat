@@ -49,24 +49,12 @@ const Header = () => {
         }
 
         if (location.pathname !== '/') {
-            navigate('/');
-            // Small timeout to allow navigation to complete before scrolling
-            setTimeout(() => {
-                const element = document.getElementById(id);
-                if (element) {
-                    const headerOffset = 100;
-                    const elementPosition = element.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.scrollY - headerOffset;
-                    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-                }
-            }, 100);
+            navigate('/#' + id);
         } else {
             const element = document.getElementById(id);
             if (element) {
-                const headerOffset = 100;
-                const elementPosition = element.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.scrollY - headerOffset;
-                window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                // Header offset is handled by CSS scroll-margin-top now
+                element.scrollIntoView({ behavior: "smooth" });
             }
         }
         setActiveSection(id);

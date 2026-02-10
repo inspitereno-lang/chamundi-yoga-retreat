@@ -39,14 +39,39 @@ const ScrollToTop = () => {
     const { pathname, hash } = useLocation();
 
     useEffect(() => {
-        if (!hash) {
-            window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-        } else {
+        const scrollToElement = () => {
+            if (!hash) {
+                window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+                return true;
+            }
+
             const id = hash.replace('#', '');
             const element = document.getElementById(id);
             if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                return true;
             }
+            return false;
+        };
+
+        // Try immediately
+        if (!scrollToElement()) {
+            // Retry for a bit if not found (lazy load)
+            const interval = setInterval(() => {
+                if (scrollToElement()) {
+                    clearInterval(interval);
+                }
+            }, 100);
+
+            // Stop trying after 2 seconds
+            const timeout = setTimeout(() => {
+                clearInterval(interval);
+            }, 2000);
+
+            return () => {
+                clearInterval(interval);
+                clearTimeout(timeout);
+            };
         }
     }, [pathname, hash]);
 

@@ -161,6 +161,17 @@ section {
 }
 
 
+/* Fix scroll position for fixed header */
+#home,
+#studios,
+#packages,
+#services,
+#booking,
+#about,
+#faq {
+  scroll-margin-top: 100px;
+}
+
 @media (max-width: 768px) {
   section {
     padding: 3rem 0;

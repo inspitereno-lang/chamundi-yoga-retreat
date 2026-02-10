@@ -243,6 +243,10 @@
     .faq-redirect-card-enhanced {
         padding: 2.5rem 1.5rem;
     }
+
+    .booking-header h1 {
+        font-size: 2.2rem;
+    }
 }
 
 .booking-main {
