@@ -26,11 +26,11 @@ const Footer = () => {
 
                     <div className="footer-links-section">
                         <h3>Quick Links</h3>
-                        <ul className="footer-links" style={{ listStyle: 'none', padding: 0 }}>
-                            <li style={{ marginBottom: '0.8rem' }}><Link to="/#packages" style={{ color: 'inherit', textDecoration: 'none', fontSize: '0.95rem' }}>Packages</Link></li>
-                            <li style={{ marginBottom: '0.8rem' }}><Link to="/#services" style={{ color: 'inherit', textDecoration: 'none', fontSize: '0.95rem' }}>Services</Link></li>
-                            <li style={{ marginBottom: '0.8rem' }}><Link to="/#booking" style={{ color: 'inherit', textDecoration: 'none', fontSize: '0.95rem' }}>Book a Space</Link></li>
-                            <li style={{ marginBottom: '0.8rem' }}><Link to="/faq" style={{ color: 'inherit', textDecoration: 'none', fontSize: '0.95rem' }}>FAQ</Link></li>
+                        <ul className="footer-links">
+                            <li><Link to="/#packages">Packages</Link></li>
+                            <li><Link to="/#services">Services</Link></li>
+                            <li><Link to="/#booking">Book a Space</Link></li>
+                            <li><Link to="/faq">FAQ</Link></li>
                         </ul>
                     </div>
 

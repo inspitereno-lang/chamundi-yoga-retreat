@@ -28,7 +28,7 @@ const Studios = () => {
                 "Equipped with mats, blocks, bolsters, and sound system",
                 "Ideal for group sessions, workshops, and teacher trainings",
             ],
-            img: "/images/optimized/048.jpg",
+            img: "/images/optimized/WhatsApp Image 2026-02-13 at 17.29.57.jpeg",
         },
     ];
 
