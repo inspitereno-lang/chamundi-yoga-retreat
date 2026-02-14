@@ -63,6 +63,7 @@ const Home = () => {
             preload="auto"
             className="hero-video"
           >
+            <source src="/chamundi 2.webm" type="video/webm" />
             <source src="/chamundi 2.mp4" type="video/mp4" />
           </video>
         </div>
