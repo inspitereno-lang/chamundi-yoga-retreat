@@ -129,5 +129,24 @@
 @media (max-width: 600px) {
     .footer-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin: 0 auto 1.5rem;
+        display: block;
+    }
+
+    .footer-info p {
+        margin: 0 auto;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer ul li {
+        justify-content: center;
     }
 }

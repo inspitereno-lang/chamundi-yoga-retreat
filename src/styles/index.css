@@ -173,7 +173,7 @@ main section {
 }
 
 @media (max-width: 768px) {
-  section {
+  main section {
     padding: 3rem 0;
   }
 
