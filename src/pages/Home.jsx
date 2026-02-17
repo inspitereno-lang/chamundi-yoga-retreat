@@ -62,7 +62,6 @@ const Home = () => {
             playsInline
             preload="auto"
             className="hero-video"
-            poster="/images/optimized/peacefull.jpg.webp"
           >
             <source src="/0206(1).mp4" type="video/mp4" />
           </video>
