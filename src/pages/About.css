@@ -1,5 +1,5 @@
 .about-header {
-    background: url('/Users/renoroy/Downloads/123/public/images/optimized/WhatsApp Image 2026-02-17 at 20.33.45.jpeg');
+    background: url('/images/optimized/WhatsApp Image 2026-02-17 at 20.33.45.jpeg');
     background-size: cover;
     background-position: center;
     background-position: center;
@@ -7,7 +7,7 @@
 
 @media (max-width: 768px) {
     .about-header {
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/Users/renoroy/Downloads/123/public/images/optimized/photo-collage.png.png');
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/optimized/photo-collage.png.png');
         background-size: cover;
         background-position: center;
     }
