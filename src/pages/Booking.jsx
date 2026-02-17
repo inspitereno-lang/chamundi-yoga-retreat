@@ -288,18 +288,20 @@ const Booking = () => {
                         <div className="sidebar-box visit-box">
                             <h3>Visit Us</h3>
                             <ul className="visit-list">
-                                <li>Schedule a yoga hall tour</li>
-                                <li>Book a trial yoga session</li>
+                                <li>250-acre hilltop space</li>
+                                <li>Pure, unpolluted air</li>
+                                <li>Organic spices & greenery</li>
+                                <li>Peaceful natural surroundings</li>
                             </ul>
                         </div>
 
-                        <div className="sidebar-box policies">
-                            <h3><Info size={20} /> Booking Policies</h3>
+                        <div className="sidebar-box speciality">
+                            <h3><Award size={20} /> Speciality Treatment of Yoga</h3>
                             <ul>
-                                <li>Advance booking required for all slots.</li>
-                                <li>Please arrive 10 minutes early.</li>
-                                <li>Equipment must be handled with care.</li>
-                                <li>Payments are required to secure the slot.</li>
+                                <li>Personalized holistic healing sessions.</li>
+                                <li>Ancient Ayurvedic techniques integration.</li>
+                                <li>Mind-body balance and rejuvenation.</li>
+                                <li>Expert-guided meditation practices.</li>
                             </ul>
                         </div>
 

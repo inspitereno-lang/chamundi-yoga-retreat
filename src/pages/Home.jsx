@@ -62,6 +62,7 @@ const Home = () => {
             playsInline
             preload="auto"
             className="hero-video"
+            poster="/images/optimized/peacefull.jpg.webp"
           >
             <source src="/0206(1).mp4" type="video/mp4" />
           </video>
@@ -184,7 +185,7 @@ const Home = () => {
             </div>
             <div className="heritage-image-wrapper">
               <img
-                src="/images/optimized/yoga.webp"
+                src="/images/optimized/WhatsApp Image 2026-02-17 at 16.01.30.jpeg"
                 alt="25 Years Journey"
                 className="heritage-img"
               />

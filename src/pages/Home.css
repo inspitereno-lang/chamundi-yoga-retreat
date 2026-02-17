@@ -38,15 +38,19 @@ h3 {
 .hero {
     position: relative;
     height: 80vh;
-    /* Reduced from 90vh to minimize "zoom" distortion */
-    min-height: 600px;
-    /* Reserves space to prevent CLS */
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     background-color: #1a1a1a;
-    /* Dark base for better contrast */
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 70vh;
+        min-height: 400px;
+    }
 }
 
 .hero-video {
@@ -287,6 +291,7 @@ h3 {
 @media (max-width: 600px) {
     .offer-grid-enhanced {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .hero h1 {
@@ -746,14 +751,15 @@ h3 {
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     overflow: hidden;
-    height: 450px;
+    height: auto;
 }
 
 .heritage-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     display: block;
+    object-fit: contain;
+    /* Ensures full image visibility */
 }
 
 /* Content Column */
@@ -816,11 +822,12 @@ h3 {
 @media (max-width: 992px) {
     .journey-grid {
         grid-template-columns: 1fr;
-        gap: 5rem;
+        gap: 3rem;
     }
 
     .journey-visual {
         justify-content: center;
+        gap: 2rem;
     }
 
     .journey-content {
@@ -828,22 +835,23 @@ h3 {
     }
 
     .underline-left {
-        margin: 0 auto 2.5rem;
+        margin: 0 auto 1.5rem;
     }
 
     .journey-description {
         margin: 0 auto;
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 600px) {
     .journey-section-enhanced {
-        padding: 4rem 0;
+        padding: 2.5rem 0;
     }
 
     .journey-visual {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
         text-align: center;
     }
 
@@ -856,7 +864,7 @@ h3 {
     }
 
     .heritage-image-wrapper {
-        height: 250px;
+        height: auto;
     }
 
     .journey-content h2 {

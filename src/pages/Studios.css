@@ -1,6 +1,6 @@
 .page-header.studios-header {
     padding: 10rem 0 5rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/optimized/studio.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/optimized/yoga-hall-banner.webp');
     background-size: cover;
     background-position: center;
     color: white;
@@ -372,15 +372,20 @@
 }
 
 @media (max-width: 768px) {
-    .package-title-group h3 {
-        font-size: 1.6rem;
+    .page-header.studios-header {
+        padding: 6rem 0 3rem;
+    }
+
+    .studio-detail-card {
+        gap: 2rem;
+        margin-bottom: 2rem;
     }
 
     .package-content-pro {
-        padding: 2rem;
+        padding: 1.5rem;
     }
+}
 
-    .package-header-pro {
-        gap: 1.2rem;
-    }
+.package-header-pro {
+    gap: 1.2rem;
 }

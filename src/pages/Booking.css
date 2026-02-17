@@ -1,5 +1,5 @@
 .booking-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/optimized/outsideImage.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/optimized/booking-banner.webp');
     background-size: cover;
     background-position: center;
 }
@@ -250,7 +250,7 @@
 }
 
 .booking-main {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 /* --- Legacy Branding Styles --- */
@@ -281,11 +281,11 @@
 
 .faq-redirect-card {
     background: #f9f9f7;
-    padding: 3rem;
+    padding: 2rem;
     text-align: center;
     border: 2px dashed rgba(74, 124, 68, 0.1);
     border-radius: 4px;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .redirect-content h3 {
@@ -301,13 +301,13 @@
 /* --- Enhanced FAQ Redirect Card --- */
 .faq-redirect-card-enhanced {
     background: var(--white);
-    padding: 4rem;
+    padding: 2.5rem;
     border: 1px solid rgba(74, 124, 68, 0.1);
     border-radius: 4px;
     text-align: center;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04);
     max-width: 900px;
-    margin: 4rem auto 0;
+    margin: 2rem auto 0;
     position: relative;
     overflow: hidden;
 }
