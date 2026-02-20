@@ -18,7 +18,7 @@ const About = () => {
                         <p>Kerala Ayurveda Yoga was created as a peaceful sanctuary for yoga, meditation, and wellness. Our goal is to provide yoga teachers, travelers, and practitioners a serene environment to connect deeply with their practice — surrounded by nature and calm energy.</p>
                     </div>
                     <div className="about-img">
-                        <img src="/images/optimized/005.webp" alt="Our Sanctuary" loading="lazy" />
+                        <img src="/images/optimized/PHOTO-2026-02-17-09-56-37.jpg" alt="Our Sanctuary" loading="lazy" />
                     </div>
                     <div className="about-text-bottom">
                         <h3>Our Commitment</h3>
