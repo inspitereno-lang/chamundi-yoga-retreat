@@ -753,20 +753,55 @@ h3 {
     margin-top: 1rem;
 }
 
-.heritage-image-wrapper {
-    position: relative;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    overflow: hidden;
-    height: auto;
+/* Collage Layout */
+.heritage-collage {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 12px;
+    width: 100%;
 }
 
-.heritage-img {
+.collage-main {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.collage-main img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    object-fit: contain;
-    /* Ensures full image visibility */
+    transition: transform 0.8s ease;
+}
+
+.collage-main:hover img {
+    transform: scale(1.05);
+}
+
+.collage-side {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.collage-item {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s ease;
+}
+
+.collage-item:hover img {
+    transform: scale(1.05);
 }
 
 /* Content Column */

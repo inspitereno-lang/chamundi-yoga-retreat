@@ -167,12 +167,30 @@ const Home = () => {
               <div className="milestone-number">25</div>
               <div className="milestone-label">Years</div>
             </div>
-            <div className="heritage-image-wrapper">
-              <img
-                src="/images/optimized/WhatsApp Image 2026-02-17 at 16.01.30.jpeg"
-                alt="25 Years Journey"
-                className="heritage-img"
-              />
+            <div className="heritage-collage">
+              <div className="collage-main">
+                <img
+                  src="/images/optimized/founder2.jpeg"
+                  alt="Founder"
+                  loading="lazy"
+                />
+              </div>
+              <div className="collage-side">
+                <div className="collage-item">
+                  <img
+                    src="/images/optimized/founder3.jpeg"
+                    alt="Co-Founder"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="collage-item">
+                  <img
+                    src="/images/optimized/founder1.jpeg"
+                    alt="Team Member"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
           </motion.div>
 
