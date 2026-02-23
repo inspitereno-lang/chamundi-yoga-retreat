@@ -170,7 +170,7 @@ const Home = () => {
             <div className="heritage-collage">
               <div className="collage-main">
                 <img
-                  src="/images/optimized/founder2.jpeg"
+                  src="/images/optimized/founder3.jpeg"
                   alt="Founder"
                   loading="lazy"
                 />
@@ -178,7 +178,7 @@ const Home = () => {
               <div className="collage-side">
                 <div className="collage-item">
                   <img
-                    src="/images/optimized/founder3.jpeg"
+                    src="/images/optimized/founder2.jpeg"
                     alt="Co-Founder"
                     loading="lazy"
                   />
