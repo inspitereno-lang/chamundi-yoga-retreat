@@ -187,7 +187,7 @@ const Home = () => {
                     loading="lazy"
                   />
                   <div className="founder-info">
-                    <div className="founder-name">Jibu C Joseph</div>
+                    <div className="founder-name" style={{ whiteSpace: 'nowrap' }}>Jibu C Joseph</div>
                   </div>
                 </div>
                 <div className="collage-item">
