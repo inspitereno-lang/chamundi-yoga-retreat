@@ -111,6 +111,9 @@ const Header = () => {
 
                 {/* Mobile Nav */}
                 <div className={`mobile-nav ${isOpen ? 'open' : ''}`}>
+                    <button className="mobile-close-btn" onClick={() => setIsOpen(false)}>
+                        <X size={28} />
+                    </button>
                     {navLinks.map((link) => (
                         <button
                             key={link.id}

@@ -171,24 +171,34 @@ const Home = () => {
               <div className="collage-main">
                 <img
                   src="/images/optimized/founder3.jpeg"
-                  alt="Founder"
+                  alt="Saroja Thampi"
                   loading="lazy"
                 />
+                <div className="founder-info">
+                  <div className="founder-name">Saroja Thampi</div>
+                  <div className="founder-title">Managing Director</div>
+                </div>
               </div>
               <div className="collage-side">
                 <div className="collage-item">
                   <img
                     src="/images/optimized/founder2.jpeg"
-                    alt="Co-Founder"
+                    alt="Jibu C Joseph"
                     loading="lazy"
                   />
+                  <div className="founder-info">
+                    <div className="founder-name">Jibu C Joseph</div>
+                  </div>
                 </div>
                 <div className="collage-item">
                   <img
                     src="/images/optimized/founder1.jpeg"
-                    alt="Team Member"
+                    alt="Dr.Sheela VG"
                     loading="lazy"
                   />
+                  <div className="founder-info">
+                    <div className="founder-name" style={{ whiteSpace: 'nowrap' }}>Dr. Sheela VG</div>
+                  </div>
                 </div>
               </div>
             </div>
