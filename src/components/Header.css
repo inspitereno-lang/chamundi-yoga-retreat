@@ -59,19 +59,23 @@
     text-transform: uppercase;
 }
 
-/* White text for non-home pages - nav only, not logo (when NOT scrolled) */
-.header.white-nav:not(.scrolled) .nav-link,
-.header.white-nav:not(.scrolled) .nav-link-btn {
-    color: #1b3317;
+/* White text when NOT scrolled */
+.header:not(.scrolled) .nav-link,
+.header:not(.scrolled) .nav-link-btn,
+.header:not(.scrolled) .logo-main,
+.header:not(.scrolled) .logo-sub {
+    color: #ffffff;
 }
 
-.header.white-nav:not(.scrolled) .mobile-menu-btn {
-    color: #1b3317;
+.header:not(.scrolled) .mobile-menu-btn {
+    color: #ffffff;
 }
 
 /* Dark text when scrolled (white background) */
 .header.scrolled .nav-link,
-.header.scrolled .nav-link-btn {
+.header.scrolled .nav-link-btn,
+.header.scrolled .logo-main,
+.header.scrolled .logo-sub {
     color: #1b3317 !important;
 }
 
@@ -118,8 +122,8 @@
     transition: width 0.3s ease;
 }
 
-.header.white-nav:not(.scrolled) .nav-underline {
-    background-color: #1b3317;
+.header:not(.scrolled) .nav-underline {
+    background-color: #ffffff;
 }
 
 .nav-cta {
@@ -128,20 +132,7 @@
     font-size: 0.9rem;
 }
 
-/* White navbar for non-home pages */
-.header.white-nav .logo-text,
-.header.white-nav .nav-link {
-    color: #1b3317;
-}
-
-.header.white-nav .mobile-menu-btn {
-    color: #1b3317;
-}
-
-.header.white-nav .nav-link::after {
-    background-color: #1b3317;
-}
-
+/* Remove .white-nav hardcoded styles so they don't override scroll logic */
 .mobile-menu-btn {
     display: none;
     color: var(--primary-color);
