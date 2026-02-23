@@ -57,15 +57,15 @@ const About = () => {
                                 <Phone className="icon" />
                                 <div>
                                     <h4>Phone</h4>
-                                    <p>+91-9447870386</p>
-                                    <p>+91-7012379784</p>
+                                    <p><a href="tel:+919447870386">+91-9447870386</a></p>
+                                    <p><a href="tel:+917012379784">+91-7012379784</a></p>
                                 </div>
                             </div>
                             <div className="contact-card">
                                 <Mail className="icon" />
                                 <div>
                                     <h4>Email</h4>
-                                    <p>chamundikerala@gmail.com</p>
+                                    <p><a href="mailto:chamundikerala@gmail.com">chamundikerala@gmail.com</a></p>
                                 </div>
                             </div>
                             <div className="contact-card">

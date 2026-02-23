@@ -37,8 +37,9 @@ const Footer = () => {
                     <div className="footer-contact">
                         <h3>Contact Us</h3>
                         <ul>
-                            <li><Phone size={18} /> +91-9447870386</li>
-                            <li><Mail size={18} /> chamundikerala@gmail.com</li>
+                            <li><Phone size={18} /> <a href="tel:+919447870386">+91-9447870386</a></li>
+                            <li><Phone size={18} /> <a href="tel:+917012379784">+91-7012379784</a></li>
+                            <li><Mail size={18} /> <a href="mailto:chamundikerala@gmail.com">chamundikerala@gmail.com</a></li>
                             <li><MapPin size={18} /> Kottayam, Kerala, India</li>
                         </ul>
                     </div>
