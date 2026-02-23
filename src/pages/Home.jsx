@@ -20,8 +20,8 @@ const OFFERINGS = [
     img: "/images/optimized/028.webp",
   },
   {
-    title: "Flexible Booking",
-    desc: "Book by the hour, day, or weekend to suit your schedule.",
+    title: "Yoga with ayurveda massage",
+    desc: "We restore your balance, strength, and energy through Ayurveda & Yoga.",
     img: "/images/optimized/053.webp",
   },
 ];
@@ -81,21 +81,6 @@ const Home = () => {
           <motion.p className="hero-tagline" variants={ANIMATIONS.fadeIn}>
             Elevate Your <span className="highlight">Practice</span> in a Sanctuary of <span className="highlight">Serenity</span>
           </motion.p>
-          <motion.div className="hero-btns" variants={ANIMATIONS.fadeIn}>
-            <button
-              onClick={() => scrollTo("booking")}
-              className="btn btn-primary"
-            >
-              Book Space Now
-            </button>
-            <button
-              onClick={() => scrollTo("studios")}
-              className="btn btn-outline"
-              style={{ color: "white", borderColor: "white" }}
-            >
-              View Yoga Hall
-            </button>
-          </motion.div>
         </motion.div>
       </section>
 

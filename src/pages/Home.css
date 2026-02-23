@@ -206,15 +206,15 @@ h3 {
 /* FIX: Card Style */
 .offer-card-enhanced {
     background: var(--white);
-    border-radius: 0;
-    /* Square shape normal */
+    border-radius: 8px;
+    /* Slightly rounded for premium feel */
     overflow: hidden;
-    /* Keeps image zoom inside */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    /* Soft shadow */
-    transition: all 0.4s ease;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     display: flex;
     flex-direction: column;
+    height: 100%;
+    /* Ensure all cards in a grid row take full height */
 }
 
 .offer-card-enhanced:hover {
@@ -245,15 +245,22 @@ h3 {
 }
 
 .offer-content {
-    padding: 1.5rem;
+    padding: 1.5rem 1.8rem;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* Pushes content to fill space */
 }
 
 .offer-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    /* Align with top of icon */
     gap: 12px;
     margin-bottom: 12px;
+    min-height: 2.8rem;
+    /* Ensure consistent header height for alignment */
 }
 
 .offer-header .icon {

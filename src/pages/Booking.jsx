@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Clock, Users, MessageSquare, Info, ArrowRight, Award, Instagram, Facebook, Mail, Loader2, CheckCircle2, AlertCircle, Linkedin, Youtube } from 'lucide-react';
+import { Calendar, Users, MessageSquare, Info, ArrowRight, Award, Instagram, Facebook, Mail, Loader2, CheckCircle2, AlertCircle, Linkedin, Youtube } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import './Booking.css';
@@ -14,8 +14,6 @@ const Booking = () => {
         phone: '',
         country: '',
         date: '',
-        time: '',
-        duration: '1',
         participants: '',
         purpose: 'Yoga Class / Session',
         requirements: '',
@@ -31,7 +29,6 @@ const Booking = () => {
         if (!formData.phone.trim()) return toast.error("Please enter your phone number.");
         if (!formData.country.trim()) return toast.error("Please enter your country.");
         if (!formData.date) return toast.error("Please choose a date.");
-        if (!formData.time) return toast.error("Please choose a preferred time.");
         if (!formData.participants || formData.participants < 1) return toast.error("Please enter number of participants (minimum 1).");
 
         setIsSubmitting(true);
@@ -44,8 +41,6 @@ const Booking = () => {
             phone: formData.phone,
             country: formData.country,
             date: formData.date,
-            time: formData.time,
-            duration: formData.duration,
             participants: formData.participants,
             purpose: formData.purpose,
             requirements: formData.requirements || 'None provided',
@@ -67,8 +62,6 @@ const Booking = () => {
                     phone: '',
                     country: '',
                     date: '',
-                    time: '',
-                    duration: '1',
                     participants: '',
                     purpose: 'Yoga Class / Session',
                     requirements: '',
@@ -177,29 +170,6 @@ const Booking = () => {
                                         // required Removed as per instruction
                                         value={formData.date}
                                         onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label>Preferred Time <span className="required-star">*</span></label>
-                                    <input
-                                        type="time"
-                                        // required Removed as per instruction
-                                        value={formData.time}
-                                        onChange={(e) => setFormData({ ...formData, time: e.target.value })}
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="form-row">
-                                <div className="form-group">
-                                    <label>Duration (Hours) <span className="required-star">*</span></label>
-                                    <input
-                                        type="number"
-                                        min="1"
-                                        placeholder="1"
-                                        // required Removed as per instruction
-                                        value={formData.duration}
-                                        onChange={(e) => setFormData({ ...formData, duration: e.target.value })}
                                     />
                                 </div>
                                 <div className="form-group">

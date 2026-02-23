@@ -33,7 +33,7 @@ const Studios = () => {
     ];
 
     const allInclusivePackage = {
-        name: "All-Inclusive Heritage Retreat",
+        name: "All-Inclusive Heritage Retreat with Four-Hand Ayurvedic Massage",
         icon: <Home size={44} />,
         includes: [
             "Exclusive Yoga Hall Space (equipped with mats, sound & lighting)",
@@ -106,14 +106,13 @@ const Studios = () => {
                         >
                             <div className="package-visual-pro">
                                 <img src={allInclusivePackage.img} alt={allInclusivePackage.name} loading="lazy" />
-                                <div className="package-tag">Primary Offering</div>
                             </div>
                             <div className="package-content-pro">
                                 <div className="package-header-pro">
                                     <div className="package-icon-pro">{allInclusivePackage.icon}</div>
                                     <div className="package-title-group">
                                         <h3>{allInclusivePackage.name}</h3>
-                                        <p className="full-bundle">Accommodation + Food + Space</p>
+                                        <p className="full-bundle">Accommodation + Food + Space + Ayurveda</p>
                                     </div>
                                 </div>
                                 <ul className="premium-features">

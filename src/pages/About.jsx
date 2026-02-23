@@ -58,6 +58,7 @@ const About = () => {
                                 <div>
                                     <h4>Phone</h4>
                                     <p>+91-9447870386</p>
+                                    <p>+91-7012379784</p>
                                 </div>
                             </div>
                             <div className="contact-card">
